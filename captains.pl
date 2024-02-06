@@ -1,3 +1,4 @@
+use List::Util qw( max );
 my %map1 = (
     "captain" => "Dhoni",
     "wins" => 3,
@@ -10,11 +11,13 @@ my %map2 = (
     "Losses" => 0
 );
 
-my @arr = 
-my @captains = map { $_->{
-    
-} } (\%map1, \%map2);
+my @arr = (\%map1,\%map2);
 
-for my $captain (@captains) {
-    print $captain, "\n";
-}
+my @captains = map {$_->{"captain"}} (@arr);
+print join(",",@captains),"\n";
+
+my $maxWins = max (map {$_->{"wins"}} (@arr));
+print "maxWins : ",$maxWins,"\n";
+
+my @rem = grep {$_->{"wins"} == $maxWins}  (@arr);
+print $rem[0]{"captain"};
