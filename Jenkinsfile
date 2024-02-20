@@ -4,39 +4,20 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                  script {
-            Boolean bool = fileExists 'NewFile.txt'
-            if (bool) {
-                println "The File exists :)"
-            } else {
-                println "The File does not exist :("
-            }   
-        } 
+                echo "daniel"
             }
         }
      
         stages('test') {
         steps {
-            script {
-            Boolean bool = fileExists 'NewFile.txt'
-            if (bool) {
-                println "The File exists :)"
-            } else {
-                println "The File does not exist :("
-            }   
-        } 
+              echo "daniel"
         }
       }
 
       stages('deploy') {
-           script {
-            Boolean bool = fileExists 'NewFile.txt'
-            if (bool) {
-                println "The File exists :)"
-            } else {
-                println "The File does not exist :("
-            }   
-        } 
+           steps {
+              echo "Messi"
+        }
       }
     }
     
