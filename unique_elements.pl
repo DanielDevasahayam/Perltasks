@@ -8,6 +8,7 @@ foreach my $element (@arr) {
 
 my $len = scalar(keys %map);
 print "Number of unique elements: $len\n";
+print "Number of unique elements: $len\n";
 
 foreach my $key (keys %map) {
     my $count = $map{$key};
