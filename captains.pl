@@ -4,6 +4,11 @@ my %map1 = (
     "wins" => 3,
     "Losses" => 1
 );
+my %map7 = (
+    "captain" => "Dhoni",
+    "wins" => 3,
+    "Losses" => 1
+);
 
 my %map2 = (
     "captain" => "Kohli",
