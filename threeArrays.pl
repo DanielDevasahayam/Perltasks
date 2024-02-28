@@ -50,6 +50,7 @@ my $var = 1;
 print "Enter the size of the 4th array : ";
 print "Enter the size of the 4th array : ";
 print "Enter the size of the 4th array : ";
+print "Enter the size of the 4th array : ";
 
 
 for (1 .. $n4) {
