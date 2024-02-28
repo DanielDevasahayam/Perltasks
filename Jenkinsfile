@@ -1,4 +1,4 @@
-// Declarativse //
+// Declarativsdsse //
 pipeline {
     agent any
     stages {
