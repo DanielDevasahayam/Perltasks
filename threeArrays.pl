@@ -8,6 +8,8 @@ De reference the array C.
 use Array::Utils qw(:all);
 
 print("Enter the size of array 1 : ");
+print("Enter the size of array 1 : ");
+
 my $n1 = <STDIN>;
 chomp $n1;
 my @arr1;
