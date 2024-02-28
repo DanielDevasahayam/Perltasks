@@ -27,3 +27,5 @@ print "maxWins : ",$maxWins,"\n";
 
 my @rem = grep {$_->{"wins"} == $maxWins}  (@arr);
 print $rem[0]{"captain"};
+print $rem[0]{"captain"};
+
