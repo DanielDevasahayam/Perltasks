@@ -47,6 +47,7 @@ PrintList(@arr3);
 print "Enter the size of the 4th array : ";
 my $n4 = <STDIN>;
 
+
 for (1 .. $n4) {
     my $ele = <STDIN>;
     chomp $ele;
